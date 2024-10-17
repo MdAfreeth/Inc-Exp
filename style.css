@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Oswald", sans-serif;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: aliceblue;
+    display: grid;
+    place-items: center;
+}
+h1{
+    color:crimson
+}
+.Container{
+    width: 800px;
+    height: 700px;
+    background-color: #fff;
+    display: flex;
+}
+.calc{
+    background-color: chocolate;
+    padding: 20px;
+    flex: 1;
+}
+.calc h1,
+.calc h4,
+.calc h2{
+    font-weight: 700;
+    margin-bottom: 5px;
+    padding: 5px;
+}
+.calc h2{
+    text-transform: uppercase;
+    color: #fff;
+}
+.inc-exp-container div{
+    text-transform: uppercase;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    background-color:#fff;
+    border-radius: 18px;
+    
+    flex: 1;
+}
+.inc-exp-container{
+    display: flex;
+    padding: 10px;
+    gap: 10px;
+}
+.inc-exp-container div p{
+    font-size: 26px;
+   
+}
+.inc-exp-container .income{
+   color: #1fab6e;
+   border: 2px solid #1fab6e;
+   background-color: black;
+}
+.inc-exp-container .expense{
+    color: #e33f36;
+    border: 2px solid #e33f36 ;
+    background-color: black;
+   
+}
+
+#form{
+    padding: 5px;
+    margin-top: 20px;
+
+}
+
+.form-control{
+    margin-top: 20px;
+}
+label{
+    margin:10px 0;
+    display: inline-block;
+    font-size: 20px;
+    font-weight:200px;
+}
+
+input[type="text"],
+input[type="number"]{
+    border: 1px solid #fff;
+    display: block;
+    width: 100%;
+    font-size: 16px;
+    outline: none;
+    padding: 12px;
+    border-radius: 10px;
+}
+.btn{
+    background-color: #fff;
+    color:blue;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 0;
+    font-weight: 700;
+    font-size: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+
+
+
+
+
+.Transaction{
+    flex: 1;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+
+}
+.Transaction h2{
+    text-transform: uppercase;
+    font-weight: 700;
+    border:1px solid #f1f1f1;
+    padding: 8px;
+    margin-bottom: 5px;
+    text-align:center ;
+}
+.trans{
+    list-style: none;
+    position: relative;
+}
+.trans li {
+    background-color: #fff;
+    color: gray;
+    box-shadow: rgba(0,0,0,0.02) 0px 1px 3px 0px, rgba(27,31,35,0.15) 0px 0px 0px 1px;
+   padding: 10px;
+   margin: 10px 0;
+   height: 60px;
+   display: flex;
+   justify-content: space-between;
+   font-weight: 300;
+   cursor: pointer;
+}
+.trans li.inc{
+    border-left: 5px solid #1fab6e;
+}
+.trans li.exp{
+    border-left: 5px solid #e33f36;
+}
+.btn-del{
+    position: absolute;
+    right: -10px;
+    width: 20px;
+    height: 30px;  
+    border-radius: 25px;
+    border: none;
+    background-color: #e33f36;
+    cursor: pointer;
+   font-size: 18px;
+   padding: 2px;
+   opacity: 0;
+}
+.trans li:hover .btn-del {
+    opacity: 1;
+}
+
+::-webkit-scrollbar{
+    color: #f1f1f1;
+}
